@@ -1,0 +1,23 @@
+.title-big {
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size: 22px;
+}
+.title strong{
+	font-weight: 400;
+}
+.story-h2 {
+	font-size: 14px;
+	color: #6F3F3C;
+}
+.story-h3 {
+	font-size: 12px;
+	font-style: italic;
+	color: #6F3F3C;
+}
+.story-date {
+	color: rgba(111, 63, 60, 0.7);
+	font-size: 12px;
+	float: right;
+    font-style: italic;
+}

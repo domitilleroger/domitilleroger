@@ -15,7 +15,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('jade', function() {
-  gulp.src('app/src/index.jade')
+  return gulp.src('app/src/index.jade')
     .pipe(jade())
     .pipe(gulp.dest('app/build/'))
     .pipe(browserSync.reload({
@@ -27,13 +27,13 @@ gulp.task('sass', function(){
 	return gulp.src('app/src/scss/**/*.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('app/build/styles/'))
-	    .pipe(browserSync.reload({
-	      stream: true
-	    }))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 })
 
 
 gulp.task('watch', ['sass', 'jade', 'browserSync'], function (){
   gulp.watch('app/src/scss/**/*.scss', ['sass']); 
-  gulp.watch('app/src/index.jade', browserSync.reload);
+  gulp.watch('app/src/index.jade', ['jade']);
 });

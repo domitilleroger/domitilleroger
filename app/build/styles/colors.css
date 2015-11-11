@@ -1,60 +1,71 @@
-.color {
-  /* Main training */
-  /* Second training */
-  /* Asso */
-  /* Work */
-  /* Project */ }
-  .color-white {
-    color: white; }
-  .color-moon-mist {
-    color: #E5E5D6; }
-  .color-sisal {
-    color: #D0C9B7; }
-  .color-sidecar {
-    color: #F9F2DC; }
-  .color-flush-mahogany {
-    color: #C5484A; }
-  .color-congo-brown {
-    color: #6F3F3C; }
-  .color-raw-sienna {
-    color: #d17750; }
-  .color-japonica {
-    color: #d96a52; }
-  .color-fuzzy-wuzzy-brown {
-    color: #c85853; }
-  .color-charm {
-    color: #d17b9f; }
-  .color-trendy-pink {
-    color: #a274a4; }
+.color-white {
+  color: white; }
 
-.bgcolor {
-  /* Main training */
-  /* Second training */
-  /* Asso */
-  /* Work */
-  /* Project */ }
-  .bgcolor-moon-mist {
-    background-color: #E5E5D6; }
-  .bgcolor-sisal {
-    background-color: #D0C9B7; }
-  .bgcolor-sidecar {
-    background-color: #F9F2DC; }
-  .bgcolor-flush-mahogany {
-    background-color: #C5484A;
-    color: #E5E5D6; }
-  .bgcolor-congo-brown {
-    background-color: #6F3F3C;
-    color: #E5E5D6; }
-  .bgcolor-raw-sienna {
-    background-color: #d17750; }
-  .bgcolor-japonica {
-    background-color: #d96a52; }
-  .bgcolor-fuzzy-wuzzy-brown {
-    background-color: #c85853; }
-  .bgcolor-charm {
-    background-color: #d17b9f; }
-  .bgcolor-trendy-pink {
-    background-color: #a274a4; }
+.bgcolor-white {
+  background-color: white; }
+
+.color-moon-mist {
+  color: #E5E5D6; }
+
+.bgcolor-moon-mist {
+  background-color: #E5E5D6; }
+
+.color-sisal {
+  color: #D0C9B7; }
+
+.bgcolor-sisal {
+  background-color: #D0C9B7; }
+
+.color-sidecar {
+  color: #F9F2DC; }
+
+.bgcolor-sidecar {
+  background-color: #F9F2DC; }
+
+.color-flush-mahogany {
+  color: #C5484A; }
+
+.bgcolor-flush-mahogany {
+  background-color: #C5484A; }
+
+.color-congo-brown {
+  color: #6F3F3C; }
+
+.bgcolor-congo-brown {
+  background-color: #6F3F3C; }
+
+.color-raw-sienna {
+  color: #d17750; }
+
+.bgcolor-raw-sienna {
+  background-color: #d17750; }
+
+.color-japonica {
+  color: #d96a52; }
+
+.bgcolor-japonica {
+  background-color: #d96a52; }
+
+.color-fuzzy-wuzzy-brown {
+  color: #c85853; }
+
+.bgcolor-fuzzy-wuzzy-brown {
+  background-color: #c85853; }
+
+.color-charm {
+  color: #d17b9f; }
+
+.bgcolor-charm {
+  background-color: #d17b9f; }
+
+.color-trendy-pink {
+  color: #a274a4; }
+
+.bgcolor-trendy-pink {
+  background-color: #a274a4; }
+
+.bgcolor-flush-mahogany, .bgcolor-congo-brown {
+  color: #E5E5D6; }
 
 .icon-formation {
   color: #d17750; }

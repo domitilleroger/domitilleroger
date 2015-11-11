@@ -1,34 +1,14 @@
-.color{
-	&-white				{ color: white ; }
-	&-moon-mist			{ color: #E5E5D6; }
-	&-sisal				{ color: #D0C9B7; }
-	&-sidecar			{ color: #F9F2DC; }
-	&-flush-mahogany	{ color: #C5484A; }
-	&-congo-brown		{ color: #6F3F3C; }
+@import 'variable.scss';
 
-	&-raw-sienna			{	color: #d17750; }/* Main training */
-	&-japonica				{	color: #d96a52; }/* Second training */
-	&-fuzzy-wuzzy-brown		{	color: #c85853; }/* Asso */
-	&-charm					{	color: #d17b9f; }/* Work */
-	&-trendy-pink			{	color: #a274a4; }/* Project */
+@each $color in map-keys($colors){
+	.color-#{$color} { color: map-get($colors, $color); }	
+	.bgcolor-#{$color} { background-color: map-get($colors, $color); }	
 }
 .bgcolor{
-	&-moon-mist			{ background-color: #E5E5D6; }
-	&-sisal				{ background-color: #D0C9B7; }
-	&-sidecar			{ background-color: #F9F2DC; }
-	&-flush-mahogany	{ background-color: #C5484A; color: #E5E5D6; }
-	&-congo-brown		{ background-color: #6F3F3C; color: #E5E5D6; }
-	
-	&-raw-sienna		{	background-color: #d17750; }/* Main training */
-	&-japonica			{	background-color: #d96a52; }/* Second training */
-	&-fuzzy-wuzzy-brown	{	background-color: #c85853; }/* Asso */
-	&-charm				{	background-color: #d17b9f; }/* Work */
-	&-trendy-pink		{	background-color: #a274a4; }/* Project */
+	&-flush-mahogany,
+	&-congo-brown	{ color: #E5E5D6; }
 }
 
-.icon{
-	&-formation	{	color: #d17750; }
-	&-asso		{	color: #c85853; }
-	&-work		{	color: #d17b9f; }
-	&-project	{	color: #a274a4; }
+@each $icon in map-keys($icons){
+	.icon-#{$icon} 	{ color: 			map-get($icons, $icon); }
 }

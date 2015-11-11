@@ -1,3 +1,5 @@
+@import 'variable';
+
 .title{
 	&-big {
 		font-variant: small-caps;
@@ -12,15 +14,15 @@
 .story{
 	&-h2 {
 		font-size: 14px;
-		color: #6F3F3C;
+		color: map-get($colors, congo-brown);
 	}
 	&-h3 {
 		font-size: 12px;
 		font-style: italic;
-		color: #6F3F3C;
+		color: map-get($colors, congo-brown);
 	}
 	&-date {
-		color: rgba(111, 63, 60, 0.7);
+		color: rgba(map-get($colors, congo-brown), 0.7);
 		font-size: 12px;
 		float: right;
 	    font-style: italic;
@@ -28,8 +30,8 @@
 }
 
 .date{
-	color: rgba(111, 63, 60, 0.7);
+	color: rgba(map-get($colors, congo-brown), 0.7);
 	font-size: 12px;
 	float: right;
     font-style: italic;
-}
+} 

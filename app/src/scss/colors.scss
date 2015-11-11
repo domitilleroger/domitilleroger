@@ -1,34 +1,34 @@
-.color-white			{ color: white ; }
-.color-moon-mist		{ color: #E5E5D6; }
-.bgcolor-moon-mist		{ background-color: #E5E5D6; }
-.color-sisal			{ color: #D0C9B7; }
-.bgcolor-sisal			{ background-color: #D0C9B7; }
-.color-sidecar			{ color: #F9F2DC; }
-.bgcolor-sidecar		{ background-color: #F9F2DC; }
-.color-flush-mahogany	{ color: #C5484A; }
-.bgcolor-flush-mahogany	{ background-color: #C5484A; color: #E5E5D6; }
-.color-congo-brown		{ color: #6F3F3C; }
-.bgcolor-congo-brown	{ background-color: #6F3F3C; color: #E5E5D6; }
+.color{
+	&-white				{ color: white ; }
+	&-moon-mist			{ color: #E5E5D6; }
+	&-sisal				{ color: #D0C9B7; }
+	&-sidecar			{ color: #F9F2DC; }
+	&-flush-mahogany	{ color: #C5484A; }
+	&-congo-brown		{ color: #6F3F3C; }
 
-/* Main training */
-.color-raw-sienna			{	color: #d17750; }
-.bgcolor-raw-sienna			{	background-color: #d17750; }
-/* Second training */
-.color-japonica				{	color: #d96a52; }
-.bgcolor-japonica			{	background-color: #d96a52; }
-/* Asso */
-.color-fuzzy-wuzzy-brown	{	color: #c85853; }
-.bgcolor-fuzzy-wuzzy-brown	{	background-color: #c85853; }
-/* Work */
-.color-charm				{	color: #d17b9f; }
-.bgcolor-charm				{	background-color: #d17b9f; }
-/* Project */
-.color-trendy-pink			{	color: #a274a4; }
-.bgcolor-trendy-pink		{	background-color: #a274a4; }
+	&-raw-sienna			{	color: #d17750; }/* Main training */
+	&-japonica				{	color: #d96a52; }/* Second training */
+	&-fuzzy-wuzzy-brown		{	color: #c85853; }/* Asso */
+	&-charm					{	color: #d17b9f; }/* Work */
+	&-trendy-pink			{	color: #a274a4; }/* Project */
+}
+.bgcolor{
+	&-moon-mist			{ background-color: #E5E5D6; }
+	&-sisal				{ background-color: #D0C9B7; }
+	&-sidecar			{ background-color: #F9F2DC; }
+	&-flush-mahogany	{ background-color: #C5484A; color: #E5E5D6; }
+	&-congo-brown		{ background-color: #6F3F3C; color: #E5E5D6; }
+	
+	&-raw-sienna		{	background-color: #d17750; }/* Main training */
+	&-japonica			{	background-color: #d96a52; }/* Second training */
+	&-fuzzy-wuzzy-brown	{	background-color: #c85853; }/* Asso */
+	&-charm				{	background-color: #d17b9f; }/* Work */
+	&-trendy-pink		{	background-color: #a274a4; }/* Project */
+}
 
-
-
-.icon-formation	{	color: #d17750; }
-.icon-asso		{	color: #c85853; }
-.icon-work		{	color: #d17b9f; }
-.icon-project	{	color: #a274a4; }
+.icon{
+	&-formation	{	color: #d17750; }
+	&-asso		{	color: #c85853; }
+	&-work		{	color: #d17b9f; }
+	&-project	{	color: #a274a4; }
+}

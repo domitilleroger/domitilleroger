@@ -15,62 +15,44 @@ body{
 	height: 70px;
     padding: 10px 0px;
     box-sizing: border-box;
-}
-.block:nth-last-child(n+2){
-    border-bottom: solid 1px #CCCCCC;
-}
-
-.date{
-	color: rgba(111, 63, 60, 0.7);
-	font-size: 12px;
-	float: right;
-    font-style: italic;
-}
-.title strong{
-	font-weight: 400;
+    &:nth-last-child(n+2)       { border-bottom: solid 1px #CCCCCC; }
 }
 
 .wrapper {
     position:relative;
     margin:20px;
 }
+
 .arc {
     position:relative;
     width:80px;			height:80px;
     border-radius:100%;
     box-sizing: border-box;
     border: 1px solid rgb(255,255,255);
-}
-.arc:before {
-    content: "";
-    position:absolute;
-    width:79px;         height:79px;
-    left:0;             top:0;
-    box-sizing: border-box;
-    border-radius:100%;
-    border: 8px solid rgba(255,255,255,0.3);
-}
-.arc:after {
-    content: "";
-    position:absolute;
-    width:100%;         height:100%;
-    left:0;             top:0;
-    box-sizing: border-box;
-    border-radius:100%;
-    border: 8px solid;
-    border-color: white transparent transparent transparent;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.arc2:after {
-    border-color: white white transparent transparent;
-}
-.arc3:after {
-    border-color: white white white transparent;
-}
-.arc4:after {
-    border-color: white;
+
+    &:before,
+    &:after {
+        content: "";
+        position:absolute;
+        left:0;             top:0;
+        box-sizing: border-box;
+        border-radius:100%;
+        border: 8px solid;
+    }
+    &:before {
+        width:79px;         height:79px;
+        border-color: rgba(255,255,255,0.3);
+    }
+    &:after {
+        width:100%;         height:100%;
+        border-color: white transparent transparent transparent;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &2:after { border-color: white white transparent transparent; }
+    &3:after { border-color: white white white transparent; }
+    &4:after { border-color: white; }
 }

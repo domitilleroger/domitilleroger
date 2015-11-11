@@ -33,8 +33,7 @@ gulp.task('sass', function(){
 })
 
 
-gulp.task('build', function (callback) {
-  runSequence(['sass', 'jade', 'browserSync'],
-  callback
-  )
+gulp.task('watch', ['sass', 'jade', 'browserSync'], function (){
+  gulp.watch('app/src/scss/**/*.scss', ['sass']); 
+  gulp.watch('app/src/index.jade', browserSync.reload);
 });

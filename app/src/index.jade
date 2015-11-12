@@ -3,44 +3,80 @@ html
   head
     // En-tête de la page
     meta(charset='utf-8')
-    //link(href='css/style.css', rel='stylesheet', type='text/css')
     link(href='styles/style.css', rel='stylesheet', type='text/css')
     title Domitille Roger
     script(src='script.js')
   body.bgcolor-moon-mist
     .layout-fixed
-      div
-        .sheet.bgcolor-flush-mahogany Domitille Roger - Webdesign
+      div.header
+        .sheet.bgcolor-flush-mahogany
+          p Domitille Roger 
+            span - Ingénieur, passionnée de webdesign
       div
         .sheet.bgcolor-congo-brown
-          h1.title-big Compétences
-          .wrapper
-            .arc
+          .skill-container
+            .skill-arc: .arc.arc3
             .skill
-              h2 Front-endddd
+              h2.skill-title Intégration
               ul
-                li #node
-                li #grunt
-                li #gulp
-                li #npm
-                li #angular
-            .arc.arc2
+                li.tag!= '<span>#</span>html5'
+                li.tag!= '<span>#</span>css3'
+                li.tag!= '<span>#</span>jade'
+                li.tag!= '<span>#</span>less'
+                li.tag!= '<span>#</span>bootstrap'
+                li.tag!= '<span>#</span>responsive'
+          .skill-container
+            .skill-arc: .arc.arc2
             .skill
-              h2 Création
+              h2.skill-title Front-end
               ul
-                li #adobePhotoshop
-                li #adobeIllustrator
-                li #adobePremierePro
-                li #adobeAfterEffects
-                li #frontify
-                li #diy
-                li #origami
-            .arc.arc3
-            .arc.arc4
+                li.tag!= '<span>#</span>node'
+                li.tag!= '<span>#</span>grunt'
+                li.tag!= '<span>#</span>gulp'
+                li.tag!= '<span>#</span>npm'
+                li.tag!= '<span>#</span>angular'
+          .skill-container
+            .skill-arc: .arc.arc3
+            .skill
+              h2.skill-title Création
+              ul
+                li.tag!= '<span>#</span>photoshop'
+                li.tag!= '<span>#</span>illustrator'
+                li.tag!= '<span>#</span>premierePro'
+                li.tag!= '<span>#</span>afterEffects'
+                li.tag!= '<span>#</span>frontify'
+                li.tag!= '<span>#</span>diy'
+                li.tag!= '<span>#</span>origami'
+          .skill-container
+            .skill-arc: .arc.arc1
+            .skill
+              h2 Versionning
+              ul
+                li.tag!= '<span>#</span>git'
+                li.tag!= '<span>#</span>github'
+                li.tag!= '<span>#</span>svn'
+                li.tag!= '<span>#</span>bitbucket'
+          .skill-container
+            .skill-arc: .arc.arc2
+            .skill
+              h2 Veille
+              ul
+                li.tag!= '<span>#</span>meetUp'
+                li.tag!= '<span>#</span>blogs'
+                li.tag!= '<span>#</span>forums'
+                li.tag!= '<span>#</span>socialMedias'
+          .skill-container
+            .skill-arc: .arc.arc4
+            .skill
+              h2 Humaine
+              ul
+                li.tag!= '<span>#</span>souriante'
+                li.tag!= '<span>#</span>sociale'
+                li.tag!= '<span>#</span>integre'
       div
         .sheet.bgcolor-flush-mahogany Story short lines
       div
-        .btn-fab.bgcolor-flush-mahogany
+        .btn.btn-fab.bgcolor-flush-mahogany
           i.icon.icon-mail
       .central
         .block

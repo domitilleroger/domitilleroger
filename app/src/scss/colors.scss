@@ -1,8 +1,14 @@
 @import 'variable.scss';
 
 @each $color in map-keys($colors){
-	.color-#{$color} { color: map-get($colors, $color); }	
-	.bgcolor-#{$color} { background-color: map-get($colors, $color); }	
+	.color-#{$color} {
+		color: map-get($colors, $color);
+	}	
+	.bgcolor-#{$color} {
+		background-color: map-get($colors, $color);
+		&.btn:hover{
+			background-color: darken(map-get($colors, $color), 5%);
+		}}	
 }
 .bgcolor{
 	&-flush-mahogany,

@@ -1,11 +1,13 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic';
 @import url(reset.css);
+@import url(variable.css);
 @import url(colors.css);
 @import url(icon-font.css);
 @import url(layout.css);
 @import url(material-design.css);
 @import url(dot.css);
 @import url(typography.css);
+@import url(skill.css);
 body {
   font-family: 'Lato';
   font-weight: 300;
@@ -18,39 +20,12 @@ body {
   .block:nth-last-child(n+2) {
     border-bottom: solid 1px #CCCCCC; }
 
-.wrapper {
-  position: relative;
-  margin: 20px; }
-
-.arc {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  box-sizing: border-box;
-  border: 1px solid white; }
-  .arc:before, .arc:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    border-radius: 100%;
-    border: 8px solid;
-    width: 100%;
-    height: 100%; }
-  .arc:before {
-    border-color: rgba(255, 255, 255, 0.3); }
-  .arc:after {
-    border-color: white transparent transparent transparent;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .arc2:after {
-    border-color: white white transparent transparent; }
-  .arc3:after {
-    border-color: white white white transparent; }
-  .arc4:after {
-    border-color: white; }
+.header {
+  font-family: 'Raleway'; }
+  .header p {
+    font-weight: 500;
+    font-size: 12px; }
+    .header p span {
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      text-align: right; }

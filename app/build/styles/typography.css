@@ -26,3 +26,18 @@
   font-size: 12px;
   float: right;
   font-style: italic; }
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 12px;
+  opacity: 0.9; }
+  .tag span {
+    font-weight: 100;
+    font-size: 14px;
+    opacity: 0.6; }
+  .skill .tag {
+    margin-right: 0;
+    margin-left: 5px; }

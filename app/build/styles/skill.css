@@ -1,0 +1,54 @@
+.skill-container {
+  display: flex; }
+  .skill-container:nth-last-child(n+2) {
+    margin-bottom: 40px; }
+  .skill-container > * {
+    align-self: center; }
+  .skill-container:nth-child(odd) .skill-arc {
+    order: 2; }
+  .skill-container:nth-child(even) .skill {
+    padding-left: 10px;
+    text-align: right; }
+
+.skill {
+  flex: 1 0 70%;
+  box-sizing: border-box; }
+  .skill-title {
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px; }
+
+.skill-arc {
+  flex: 1 0 30%; }
+
+.arc {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box; }
+  .arc:before, .arc:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 8px solid;
+    width: 100%;
+    height: 100%; }
+  .arc:before {
+    border-color: rgba(255, 255, 255, 0.3); }
+  .arc:after {
+    border-color: white transparent transparent transparent;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .arc2:after {
+    border-color: white white transparent transparent; }
+  .arc3:after {
+    border-color: white white white transparent; }
+  .arc4:after {
+    border-color: white; }

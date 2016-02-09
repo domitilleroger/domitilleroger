@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic';
 @import url(reset.css);
-@import url(variable.css);
 @import url(colors.css);
 @import url(icon-font.css);
 @import url(layout.css);
@@ -8,17 +7,16 @@
 @import url(dot.css);
 @import url(typography.css);
 @import url(skill.css);
+@import url(variable.css);
 body {
   font-family: 'Lato';
   font-weight: 300;
   box-sizing: border-box; }
 
 .block {
-  height: 70px;
-  padding: 10px 0px;
+  height: 100px;
+  padding: 20px 0px;
   box-sizing: border-box; }
-  .block:nth-last-child(n+2) {
-    border-bottom: solid 1px #CCCCCC; }
 
 .header {
   font-family: 'Raleway'; }
@@ -29,3 +27,14 @@ body {
       font-variant: small-caps;
       letter-spacing: 1px;
       text-align: right; }
+
+.timeline {
+  position: relative; }
+  .timeline:before {
+    content: '';
+    width: 2px;
+    height: 1650px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -10;
+    left: 145px; }

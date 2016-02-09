@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic';
 @import 'reset.css';
-@import 'variable.css';
 @import 'colors.css';
 @import 'icon-font.css';
 @import 'layout.css';
@@ -8,6 +7,7 @@
 @import 'dot.css';
 @import 'typography.css';
 @import 'skill.css';
+@import 'variable.css';
 
 body{
 	font-family: 'Lato';
@@ -15,10 +15,9 @@ body{
 	box-sizing: border-box;
 }
 .block{
-	height: 70px;
-    padding: 10px 0px;
+	height: 100px;
+    padding: 20px 0px;
     box-sizing: border-box;
-    &:nth-last-child(n+2)       { border-bottom: solid 1px #CCCCCC; }
 }
 
 .header{
@@ -31,5 +30,18 @@ body{
             letter-spacing: 1px;
             text-align: right;
         }
+    }
+}
+
+.timeline{
+    position: relative;
+    &:before{
+        content: '';
+        width: 2px;
+        height: 1650px;
+        position: absolute;
+        background-color: rgba(black, 0.1);
+        z-index: -10;
+        left: 145px;
     }
 }

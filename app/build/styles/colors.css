@@ -7,12 +7,12 @@
     background-color: #f2f2f2; }
 
 .color-moon-mist {
-  color: #E5E5D6; }
+  color: #E5E3E1; }
 
 .bgcolor-moon-mist {
-  background-color: #E5E5D6; }
+  background-color: #E5E3E1; }
   .bgcolor-moon-mist.btn:hover {
-    background-color: #dbdbc6; }
+    background-color: #d9d6d3; }
 
 .color-sisal {
   color: #D0C9B7; }
@@ -87,16 +87,16 @@
     background-color: #98659a; }
 
 .bgcolor-flush-mahogany, .bgcolor-congo-brown {
-  color: #E5E5D6; }
+  color: #F7F5F3; }
 
-.icon-formation {
-  color: #d17750; }
+.category-formation {
+  background-color: #d17750; }
 
-.icon-asso {
-  color: #c85853; }
+.category-asso {
+  background-color: #c85853; }
 
-.icon-work {
-  color: #d17b9f; }
+.category-work {
+  background-color: #d17b9f; }
 
-.icon-project {
-  color: #a274a4; }
+.category-project {
+  background-color: #a274a4; }

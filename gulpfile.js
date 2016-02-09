@@ -15,7 +15,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('jade', function() {
-  return gulp.src('app/src/index.jade')
+  return gulp.src('app/src/**/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('app/build/'))
     .pipe(browserSync.reload({
@@ -30,10 +30,9 @@ gulp.task('sass', function(){
     .pipe(browserSync.reload({
       stream: true
     }))
-})
-
+});
 
 gulp.task('watch', ['sass', 'jade', 'browserSync'], function (){
-  gulp.watch('app/src/scss/**/*.scss', ['sass']); 
-  gulp.watch('app/src/index.jade', ['jade']);
+  gulp.watch('app/src/scss/**/*.scss', ['sass']);
+  gulp.watch('app/src/**/*.jade', ['jade']);
 });

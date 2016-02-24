@@ -12,7 +12,7 @@ html
     .layout-fixed(ng-controller="appController")
       div.header
         .sheet.bgcolor-flush-mahogany
-          p Domitille Roger 
+          //p Domitille Roger 
             span - Ingénieur, passionnée de webdesign
       div
         .btn.btn-fab.bgcolor-flush-mahogany
@@ -21,50 +21,15 @@ html
       h2 All events
 
       ul
-        h3 Formations
-        li(ng-repeat="event in events | filter: { type: 'formation' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-        p {{event.description}}
-        p
-          span(ng-repeat="tag in event.tags") {{tag}}
-        
-        h3 Expériences pro
-        li(ng-repeat="event in events | filter: { type: 'work_experience' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-        p {{event.description}}
-        p
-          span(ng-repeat="tag in event.tags") {{tag}}
-        
-        h3 Associations
-        li(ng-repeat="event in events | filter: { type: 'association' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-        p {{event.description}}
-        p
-          span(ng-repeat="tag in event.tags") {{tag}}
+        h3 Events
 
-        h3 Projets
-        li(ng-repeat="event in events | filter: { type: 'project' }  | orderBy: '-date.end'")
+        //li(ng-repeat="event in events | filterByTags:filterBy.tags") {{event.types}} {{ event.tags}}
+        li(ng-repeat="event in events | filterByTypes:filterBy.types") {{event.type}}
+
+
+        //li(ng-repeat="event in events | filter: { type: filterBy.type } | filter: { tags: filterBy.tags }")
+        //li(ng-repeat="event in events | filter: filterByToString")
+        //li(ng-repeat="event in events | filter:filterBy.type == 'formation' || filterBy.type == 'work_experience'")
           p
             {{event.title}}, 
             {{event.structure}}, 
@@ -73,123 +38,64 @@ html
             span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
             span(ng-show="event.date.start && event.date.end") à 
             span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-        p {{event.description}}
-        p
-          span(ng-repeat="tag in event.tags") {{tag}}
+          p {{event.description}}
+          p
+            span(ng-repeat="tag in event.tags" style="font-weight: bold;") {{tag}}
 
-      //.central.timeline
-        .block
-          p.category.category-work
-            i.icon.icon-work
-          p.date Avril 2015 à maintenant
-          p.title
-            strong Ingénieur études et développement
-            | , Smile
-        .block
-          p.category.category-formation
-            i.icon.icon-formation
-          p.date Septembre-Décembre 2014,
-          p.title
-            strong Ecole de Technologie Supérieure
-            | , Montréal
-        .block
-          p.category.category-project
-            i.icon.icon-project
-          p.date 2013
-          p.title
-            strong Map'us
-            | , Projet de fin d'études
-        .block
-          p.category.category-work
-            i.icon.icon-work
-          p.date Avril à Août 2014
-          p.title
-            strong Graphiste & développeuse web
-            | , Stage, Square IT Services, SSII, Asnières-sur-Seine
-          // <p>Refonte graphique et création de la vidéo de la gamme de produit SOFT, intégration du design, refonte du site web de Square IT Services</p>
-        .block
-          p.category.category-formation
-            i.icon.icon-formation
-          p.date Octobre 2013 à février 2014,
-          p.title
-            strong CNAM
-            | , Formation graphisme et web
-        .block
-          p.category.category-project
-            i.icon.icon-project
-          p.date 2013
-          p.title
-            strong Optipark
-            | , développement, ergonomie et design d'une application web destinée à gérer le parking de l'entreprise Aubay
-        .block
-          p.category.category-project
-            i.icon.icon-project
-          p.date 2013
-          p.title
-            strong Nuit de l'informatique
-            | , Design d'un site y-commerce
-        .block
-          p.category.category-formation
-            i.icon.icon-formation
-          p.date 2013
-          p.title
-            strong SI, ECE Paris
-            | , Majeure
-        .block
-          p.category.category-project
-            i.icon.icon-project
-          p.date 2013
-          p.title
-            strong Site BDE
-            | , Webmaster
-        .block
-          p.category.category-work
-            i.icon.icon-work
-          p.date Juin à Août 2013
-          p.title
-            strong Chef de projet
-            | , Stage, Axience, Laboratoire pharmaceutique, Pantin
-          // <p>Création d’un site internet de présentation des produits intégrant un espace administration, un espace vétérinaire et un espace public, intégration du design du site</p>
-        .block
-          p.category.category-asso
-            i.icon.icon-asso
-          p.date Mars 2013 à Mars 2014
-          p.title
-            strong Responsable communication & webmaster
-            |  au sein du Bureau Des Élèves de l’ECE Paris
-        .block
-          p.category.category-work
-            i.icon.icon-work
-          p.date Juin à Août 2012
-          p.title
-            strong Conception et design
-            | , Stage, Absolutlabs, Paris
-          // <p>Réalisation et design d’applications mobiles, création du site internet de promotion d’une application</p>
-        .block
-          p.category.category-asso
-            i.icon.icon-asso
-          p.date Mars 2012 à Mars 2013
-          p.title
-            strong Responsable communication
-            |  au sein de l’iTeam association de promotion du logiciel libre
-        .block
-          p.category.category-formation
-            i.icon.icon-formation
-          p.date Septembre-Décembre 2011,
-          p.title
-            strong Concordia University
-            | , Engineering School, Montréal
-        .block
-          p.category.category-formation
-            i.icon.icon-formation
-          p.date 2009 - 2015
-          p.title
-            strong ECE Paris, École d’ingénieurs
-            | , SI, Section internationale
-        .block
-          p.category.category-formation
-            i.icon.icon-formation
-          p.date Juin 2009,
-          p.title
-            strong Lycée de Juilly
-            | , BAC Scientifique, Spécialité Maths
+
+
+        //h3 Formations
+        //li(ng-repeat="event in events | filter: { type: 'formation' }  | orderBy: '-date.end'")
+          p
+            {{event.title}}, 
+            {{event.structure}}, 
+            {{event.location}} 
+            span(ng-show="event.date.start && event.date.end") de 
+            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
+            span(ng-show="event.date.start && event.date.end") à 
+            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
+          p {{event.description}}
+          p
+            span(ng-repeat="tag in event.tags") {{tag}}
+        
+        //h3 Expériences pro
+        //li(ng-repeat="event in events | filter: { type: 'work_experience' }  | orderBy: '-date.end'")
+          p
+            {{event.title}}, 
+            {{event.structure}}, 
+            {{event.location}} 
+            span(ng-show="event.date.start && event.date.end") de 
+            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
+            span(ng-show="event.date.start && event.date.end") à 
+            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
+          p {{event.description}}
+          p
+            span(ng-repeat="tag in event.tags") {{tag}}
+        
+        //h3 Associations
+        //li(ng-repeat="event in events | filter: { type: 'association' }  | orderBy: '-date.end'")
+          p
+            {{event.title}}, 
+            {{event.structure}}, 
+            {{event.location}} 
+            span(ng-show="event.date.start && event.date.end") de 
+            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
+            span(ng-show="event.date.start && event.date.end") à 
+            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
+          p {{event.description}}
+          p
+            span(ng-repeat="tag in event.tags") {{tag}}
+
+        //h3 Projets
+        //li(ng-repeat="event in events | filter: { type: 'project' }  | orderBy: '-date.end'")
+          p
+            {{event.title}}, 
+            {{event.structure}}, 
+            {{event.location}} 
+            span(ng-show="event.date.start && event.date.end") de 
+            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
+            span(ng-show="event.date.start && event.date.end") à 
+            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
+          p {{event.description}}
+          p
+            span(ng-repeat="tag in event.tags") {{tag}}

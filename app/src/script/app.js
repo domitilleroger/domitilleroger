@@ -2,18 +2,13 @@
 var app = angular.module('app', []);
 
 app.controller('appController', function($scope){
-	$scope.hide = true;
-	
-	$showForm 	= false;
-	$validated 	= false;
-	$scope.adressLines= 1;
-
-	$scope.types 				= types;
-	$scope.pates 				= pates;
-	$scope.extras 				= extras;
-	$scope.choices 				= choices;
 	$scope.events 				= events;
+	$scope.filterBy = { 
+		'type' : 'none',
+		'tags' : ['Technologie', 'Créativité', 'Communication', 'Marketing']
+	};
 
+/*
 	$scope.clearAll = function(){
 		$('html').empty();
 	};
@@ -85,5 +80,5 @@ app.controller('appController', function($scope){
 		}
 		partSlice.push($number%6);
 		return partSlice;
-	}
+	}*/
 });

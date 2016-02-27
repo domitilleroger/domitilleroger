@@ -4,37 +4,23 @@
 @import url(icon-font.css);
 @import url(layout.css);
 @import url(material-design.css);
+@import url(timeline.css);
+@import url(forms.css);
 @import url(dot.css);
 @import url(typography.css);
 @import url(skill.css);
 @import url(variable.css);
 body {
-  font-family: 'Lato';
-  font-weight: 300;
   box-sizing: border-box; }
 
-.block {
-  height: 100px;
-  padding: 20px 0px;
-  box-sizing: border-box; }
+.header p {
+  font-weight: 500;
+  font-size: 12px; }
+  .header p span {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-align: right; }
 
-.header {
-  font-family: 'Raleway'; }
-  .header p {
-    font-weight: 500;
-    font-size: 12px; }
-    .header p span {
-      font-variant: small-caps;
-      letter-spacing: 1px;
-      text-align: right; }
-
-.timeline {
-  position: relative; }
-  .timeline:before {
-    content: '';
-    width: 2px;
-    height: 1650px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.1);
-    z-index: -10;
-    left: 145px; }
+a {
+  text-decoration: none;
+  color: inherit; }

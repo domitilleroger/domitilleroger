@@ -1,0 +1,42 @@
+.select{
+    margin: 10px;
+    width: 200px;
+    position: relative;
+    font-weight: 400;
+
+    label{    
+        border-bottom: 1px solid white;
+        border-radius: 0;
+        display: block;
+        padding: 10px; }
+    &:hover label {
+        border-bottom: 0;
+    }
+    & > ul { display: none; }
+
+    &:hover > ul {
+        display: block; 
+        float: left;
+        width: 200px;
+        background: white; }
+
+    .option {
+        padding: 7px 20px;
+        font-weight: 300;
+        font-size: 12px;
+        margin-bottom: 1px;
+        color: #ed174a;
+
+        /*&:nth-last-child(n+2){
+        border-bottom: 1px solid white;}*/
+
+        &:hover {
+            background: #ed174a;
+            color: white;
+
+            & a{ display: block; }
+        }
+    }
+
+    .fa{ float: right; }
+}

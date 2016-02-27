@@ -4,24 +4,18 @@
 @import 'icon-font.css';
 @import 'layout.css';
 @import 'material-design.css';
+@import 'timeline.css';
+@import 'forms.css';
 @import 'dot.css';
 @import 'typography.css';
 @import 'skill.css';
 @import 'variable.css';
 
 body{
-	font-family: 'Lato';
-	font-weight: 300;
 	box-sizing: border-box;
-}
-.block{
-	height: 100px;
-    padding: 20px 0px;
-    box-sizing: border-box;
 }
 
 .header{
-    font-family: 'Raleway';
     p{
         font-weight: 500;
         font-size: 12px;
@@ -33,15 +27,4 @@ body{
     }
 }
 
-.timeline{
-    position: relative;
-    &:before{
-        content: '';
-        width: 2px;
-        height: 1650px;
-        position: absolute;
-        background-color: rgba(black, 0.1);
-        z-index: -10;
-        left: 145px;
-    }
-}
+a{ text-decoration: none; color: inherit; }

@@ -6,16 +6,37 @@ html
     link(href='styles/style.css', rel='stylesheet', type='text/css')
     title Domitille Roger
     script(src='script/angular.min.js')
+    link(href='styles/font-awesome.css' rel="stylesheet" type="text/css")
     script(src='script/variables.js')
     script(src='script/app.js')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+
+
   body.bgcolor-moon-mist(ng-app="app")
     .layout-fixed(ng-controller="appController")
       div.header
         .sheet.bgcolor-flush-mahogany
           //p Domitille Roger 
             span - Ingénieur, passionnée de webdesign
+          label Order by
+          select(name="selectOrder" ng-model="orderBy")
+            option(value="date.end") date.end
+            option(value="date.start") date.start
+          label Show
+          select(name="selectSort" ng-model="filterBy")
+            option(value='') All
+            option(value="formation") Formations
+            option(value="work_experience") Exp pro
+            option(value="project") Projets
+            option(value="association") Exp asso
+          div.select 
+            label Select one 
+              i.fa.fa-angle-down
+            ul
+              li.option(ng-click="changeOrderBy()"): a(href="#") date.end
+              li.option: a(href="#") date.start
       div
-        .btn.btn-fab.bgcolor-flush-mahogany
+        .btn.btn-fab.bgcolor-crimson
           i.icon.icon-mail
 
       h2 All events
@@ -99,3 +120,23 @@ html
           p {{event.description}}
           p
             span(ng-repeat="tag in event.tags") {{tag}}
+
+      .timeline
+        .block(ng-repeat="event in events  | orderBy: orderBy | filter: { type: filterBy}")
+          p.category.category-formation(ng-show="event.type=='formation'")
+            i.icon.icon-formation
+          p.category.category-work(ng-show="event.type=='work_experience'")
+            i.icon.icon-work
+          p.category.category-project(ng-show="event.type=='project'")
+            i.icon.icon-project
+          p.category.category-asso(ng-show="event.type=='association'")
+            i.icon.icon-asso
+          p.date
+            span Start: {{event.date.start | date : event.date.format}} 
+            span End: {{event.date.end | date : event.date.format}} 
+          div.main
+            h3.title {{event.title}}, 
+              span {{event.structure}}
+            p.description {{event.description}}, 
+            p
+              span.tag(ng-repeat="tag in event.tags") {{tag}} 

@@ -86,7 +86,63 @@
   .bgcolor-trendy-pink.btn:hover {
     background-color: #98659a; }
 
-.bgcolor-flush-mahogany, .bgcolor-congo-brown {
+.color-crimson {
+  color: #ed174a; }
+
+.bgcolor-crimson {
+  background-color: #ed174a; }
+  .bgcolor-crimson.btn:hover {
+    background-color: #da1141; }
+
+.color-disco {
+  color: #a2216d; }
+
+.bgcolor-disco {
+  background-color: #a2216d; }
+  .bgcolor-disco.btn:hover {
+    background-color: #8d1d5f; }
+
+.color-flamingo {
+  color: #f36d37; }
+
+.bgcolor-flamingo {
+  background-color: #f36d37; }
+  .bgcolor-flamingo.btn:hover {
+    background-color: #f25b1f; }
+
+.color-energy-yellow {
+  color: #f5da52; }
+
+.bgcolor-energy-yellow {
+  background-color: #f5da52; }
+  .bgcolor-energy-yellow.btn:hover {
+    background-color: #f4d53a; }
+
+.color-paradiso {
+  color: #3b9195; }
+
+.bgcolor-paradiso {
+  background-color: #3b9195; }
+  .bgcolor-paradiso.btn:hover {
+    background-color: #347f83; }
+
+.color-gallery {
+  color: #ebebeb; }
+
+.bgcolor-gallery {
+  background-color: #ebebeb; }
+  .bgcolor-gallery.btn:hover {
+    background-color: #dedede; }
+
+.color-seashell {
+  color: #f1f1f1; }
+
+.bgcolor-seashell {
+  background-color: #f1f1f1; }
+  .bgcolor-seashell.btn:hover {
+    background-color: #e4e4e4; }
+
+.bgcolor-crimson, .bgcolor-flush-mahogany, .bgcolor-congo-brown {
   color: #F7F5F3; }
 
 .category-formation {

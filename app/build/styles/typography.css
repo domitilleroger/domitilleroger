@@ -1,3 +1,47 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Black.otf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.otf");
+  font-weight: 800; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Bold.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-SemiBold.otf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Regular.otf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Light.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-UltraLight.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Hairline.otf");
+  font-weight: 200; }
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 300; }
+
 .title-big {
   font-variant: small-caps;
   font-weight: 400;
@@ -6,38 +50,20 @@
 .title strong {
   font-weight: 400; }
 
-.story-h2 {
-  font-size: 14px;
-  color: #6F3F3C; }
+.title span {
+  font-variant: small-caps; }
 
-.story-h3 {
-  font-size: 12px;
-  font-style: italic;
-  color: #6F3F3C; }
-
-.story-date {
-  color: rgba(111, 63, 60, 0.7);
-  font-size: 12px;
-  float: right;
-  font-style: italic; }
+.description {
+  font-size: 13px;
+  font-weight: 300; }
 
 .date {
-  color: rgba(111, 63, 60, 0.7);
   font-size: 12px;
   float: right;
-  font-style: italic; }
+  font-weight: 200; }
 
 .tag {
   display: inline-block;
   margin-right: 5px;
   font-weight: 300;
-  font-style: italic;
-  font-size: 12px;
-  opacity: 0.9; }
-  .tag span {
-    font-weight: 100;
-    font-size: 14px;
-    opacity: 0.6; }
-  .skill .tag {
-    margin-right: 0;
-    margin-left: 5px; }
+  font-size: 11px; }

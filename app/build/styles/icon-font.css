@@ -8,6 +8,7 @@
 .icon {
   font-family: 'icomoon';
   speak: none;
+  font-size: 12px;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -29,11 +30,16 @@
 .icon-asso:before {
   content: "\e903"; }
 
-.icon-formation:before {
-  content: "\e904"; }
+.icon-formation {
+  font-size: 10px; }
+  .icon-formation:before {
+    content: "\e904"; }
 
-.icon-project:before {
-  content: "\e905"; }
+.icon-project {
+  font-size: 16px;
+  line-height: 31px; }
+  .icon-project:before {
+    content: "\e905"; }
 
 .icon-work:before {
   content: "\e906"; }

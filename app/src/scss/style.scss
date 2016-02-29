@@ -1,16 +1,143 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic';
 @import 'reset.css';
-@import 'colors.css';
 @import 'icon-font.css';
-@import 'layout.css';
-@import 'material-design.css';
-@import 'timeline.css';
-@import 'forms.css';
-@import 'dot.css';
-@import 'typography.css';
-@import 'skill.css';
-@import 'variable.css';
 
+/************************************************************************
+                                VARIABLES 
+ ************************************************************************/
+$colors: (
+    white               : white,
+    moon-mist           : #E5E3E1,
+    sisal               : #D0C9B7,
+    sidecar             : #F9F2DC,
+    flush-mahogany      : #C5484A,
+    congo-brown         : #6F3F3C,
+
+    raw-sienna          : #d17750, /* Main training */
+    japonica            : #d96a52, /* Second training */
+    fuzzy-wuzzy-brown   : #c85853, /* Asso */
+    charm               : #d17b9f, /* Work */
+    trendy-pink         : #a274a4,  /* Project */
+
+    crimson             : #ed174a,
+    disco               : #a2216d,
+    flamingo            : #f36d37,
+    energy-yellow       : #f5da52,
+    paradiso            : #3b9195,
+    gallery             : #ebebeb, /* background*/
+    seashell            : #f1f1f1 /*text background grey */
+);
+$icons: (
+    formation   : #d17750,
+    asso        : #c85853,
+    work        : #d17b9f,
+    project     : #a274a4
+);
+
+/************************************************************************
+                                COLORS
+ ************************************************************************/
+@each $color in map-keys($colors){
+    .color-#{$color} {
+        color: map-get($colors, $color);
+    }   
+    .bgcolor-#{$color} {
+        background-color: map-get($colors, $color);
+        &.btn:hover{
+            background-color: darken(map-get($colors, $color), 5%);
+        }}  
+}
+.bgcolor{
+    &-crimson,
+    &-flush-mahogany,
+    &-congo-brown   { color: #F7F5F3/*map-get($colors, moon-mist)*/; }
+}
+
+
+/************************************************************************
+                                TYPOGRAPHY 
+ ************************************************************************/
+@each $icon in map-keys($icons){
+    .category-#{$icon}  { background-color:     map-get($icons, $icon); }
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Black.otf');
+    font-weight: 900;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.otf');
+    font-weight: 800;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Bold.otf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.otf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.otf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Light.otf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-UltraLight.otf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Hairline.otf');
+    font-weight: 200;
+}
+body{
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.title{
+    &-big {
+        font-variant: small-caps;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    & strong{
+        font-weight: 400;
+    }
+    span{
+        font-variant: small-caps;
+    }
+}
+.description{
+    font-size: 13px;
+    font-weight: 300;
+}
+.date{
+    font-size: 12px;
+    float: right;
+    font-weight: 200;
+} 
+
+.tag{
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 300;
+    font-size: 11px;
+}
+
+
+/************************************************************************
+                                GENERAL 
+ ************************************************************************/
 body{
 	box-sizing: border-box;
 }
@@ -28,3 +155,138 @@ body{
 }
 
 a{ text-decoration: none; color: inherit; }
+
+
+/************************************************************************
+                                MATERIAL DESIGN 
+ ************************************************************************/
+.sheet{
+    box-shadow: 0px 0px 3px #AAAAAA;
+    padding: 10px; 
+}
+.btn-fab{
+    border-radius: 56px;
+    vertical-align: middle;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    box-shadow: 0px 0px 3px #AAAAAA;
+    cursor: pointer;
+}
+/************************************************************************
+                                FORMS
+ ************************************************************************/
+.select{
+    margin: 10px;
+    width: 200px;
+    position: relative;
+    font-weight: 400;
+
+    label{    
+        border-bottom: 1px solid white;
+        border-radius: 0;
+        display: block;
+        padding: 10px; }
+    &:hover label {
+        border-bottom: 0;
+    }
+    & > ul { display: none; }
+
+    &:hover > ul {
+        display: block; 
+        float: left;
+        width: 200px;
+        background: white; }
+
+    .option {
+        padding: 7px 20px;
+        font-weight: 300;
+        font-size: 12px;
+        margin-bottom: 1px;
+        color: #ed174a;
+
+        /*&:nth-last-child(n+2){
+        border-bottom: 1px solid white;}*/
+
+        &:hover {
+            background: #ed174a;
+            color: white;
+
+            & a{ display: block; }
+        }
+    }
+
+    .fa{ float: right; }
+}
+
+/************************************************************************
+                                LAYOUT
+ ************************************************************************/
+.layout-fixed{
+    /* Tous les éléments en fixed sauf le dernier, le central*/
+    & >:nth-last-child(n+2) { position: fixed; z-index: 10; }
+
+    /* Spec au header, left, right */
+    & >:nth-child(1)        { height:  50px; width: 100%; top:0; }
+    & >:nth-child(2)        { height:  56px; width: 56px; bottom:10px; right:10px;}
+
+    /* Dernier élément centré*/
+    & >:nth-last-child(1)   { width: 100%;   margin: 50px auto; max-width: 700px; }
+}
+
+.block{
+    display: flex;
+
+    & .main{
+        flex-basis:auto;
+        margin-left: 20px;
+        background-color: rgba(white, 0.5);
+        padding: 10px;
+        width: 100%;
+    }
+    & .category{
+        flex: 0 0 30px;
+        text-align: center;
+    }
+    & .date{
+        width : 100px;
+        min-width : 100px;
+        text-align: right;
+        margin-right: 20px;
+        order: -1;
+    }
+}
+
+/************************************************************************
+                                TIMELINE
+ ************************************************************************/
+.timeline{
+    padding-top: 10px;
+
+    & .block{
+        position: relative;
+        padding: 5px 0px;
+        box-sizing: border-box;
+        &:before{
+            content: '';
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(black, 0.1);
+            z-index: -10;
+            left: 135px;
+            top: -10px;
+        }
+        & .category,
+        & .main{
+            box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+.category{
+    color: white;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 27px;
+}

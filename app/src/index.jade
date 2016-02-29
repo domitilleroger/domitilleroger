@@ -16,113 +16,35 @@ html
     .layout-fixed(ng-controller="appController")
       div.header
         .sheet.bgcolor-flush-mahogany
-          //p Domitille Roger 
+          p Domitille Roger 
             span - Ingénieur, passionnée de webdesign
-          label Order by
-          select(name="selectOrder" ng-model="orderBy")
-            option(value="date.end") date.end
-            option(value="date.start") date.start
-          label Show
-          select(name="selectSort" ng-model="filterBy")
-            option(value='') All
-            option(value="formation") Formations
-            option(value="work_experience") Exp pro
-            option(value="project") Projets
-            option(value="association") Exp asso
-          div.select 
-            label Select one 
-              i.fa.fa-angle-down
-            ul
-              li.option(ng-click="changeOrderBy()"): a(href="#") date.end
-              li.option: a(href="#") date.start
       div
         .btn.btn-fab.bgcolor-crimson
-          i.icon.icon-mail
-
-      h2 All events
-
-      ul
-        h3 Events
-
-        //li(ng-repeat="event in events | filterByTags:filterBy.tags") {{event.types}} {{ event.tags}}
-        li(ng-repeat="event in events | filterByTypes:filterBy.types") {{event.type}}
-
-
-        //li(ng-repeat="event in events | filter: { type: filterBy.type } | filter: { tags: filterBy.tags }")
-        //li(ng-repeat="event in events | filter: filterByToString")
-        //li(ng-repeat="event in events | filter:filterBy.type == 'formation' || filterBy.type == 'work_experience'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-          p {{event.description}}
-          p
-            span(ng-repeat="tag in event.tags" style="font-weight: bold;") {{tag}}
+          //i.icon.icon-mail
 
 
 
-        //h3 Formations
-        //li(ng-repeat="event in events | filter: { type: 'formation' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-          p {{event.description}}
-          p
-            span(ng-repeat="tag in event.tags") {{tag}}
-        
-        //h3 Expériences pro
-        //li(ng-repeat="event in events | filter: { type: 'work_experience' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-          p {{event.description}}
-          p
-            span(ng-repeat="tag in event.tags") {{tag}}
-        
-        //h3 Associations
-        //li(ng-repeat="event in events | filter: { type: 'association' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-          p {{event.description}}
-          p
-            span(ng-repeat="tag in event.tags") {{tag}}
-
-        //h3 Projets
-        //li(ng-repeat="event in events | filter: { type: 'project' }  | orderBy: '-date.end'")
-          p
-            {{event.title}}, 
-            {{event.structure}}, 
-            {{event.location}} 
-            span(ng-show="event.date.start && event.date.end") de 
-            span(ng-show="event.date.start") {{event.date.start | date : event.date.format}} 
-            span(ng-show="event.date.start && event.date.end") à 
-            span(ng-show="event.date.end") {{event.date.end | date : event.date.format}} 
-          p {{event.description}}
-          p
-            span(ng-repeat="tag in event.tags") {{tag}}
+      //li(ng-repeat="event in events | filterByTags:filterBy.tags") {{event.types}} {{ event.tags}}
 
       .timeline
-        .block(ng-repeat="event in events  | orderBy: orderBy | filter: { type: filterBy}")
+        div.select 
+          label Select type ...
+            //i.fa.fa-angle-down
+          ul
+            li.option(ng-click="changeFilterByTypes()"): a(href="#") All
+            li.option(ng-click="changeFilterByTypes('formation')"): a(href="#") Formations
+            li.option(ng-click="changeFilterByTypes('work_experience')"): a(href="#") Exp pro
+            li.option(ng-click="changeFilterByTypes('project')"): a(href="#") Projets
+            li.option(ng-click="changeFilterByTypes('association')"): a(href="#") Exp asso
+
+        div.select 
+          label Order by ...
+            //i.fa.fa-angle-down
+          ul
+            li.option(ng-click="changeOrderBy('date.end')"): a(href="#") Chronologique
+            li.option(ng-click="changeOrderBy('date.start')"): a(href="#") Décroissant
+        // | orderBy: orderBy | filterByTags:filterBy.tags}
+        .block(ng-repeat="event in events | filterByTypes:filterBy.types | orderBy: orderBy")
           p.category.category-formation(ng-show="event.type=='formation'")
             i.icon.icon-formation
           p.category.category-work(ng-show="event.type=='work_experience'")

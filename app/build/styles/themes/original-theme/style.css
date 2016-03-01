@@ -1,0 +1,100 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic';
+@import url(icon-font.css);
+/************************************************************************
+                            GENERAL STYLE
+ ************************************************************************/
+body {
+  box-sizing: border-box; }
+
+.header p {
+  font-weight: 500;
+  font-size: 12px; }
+  .header p span {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-align: right; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/************************************************************************
+                                MATERIAL DESIGN 
+ ************************************************************************/
+.sheet {
+  box-shadow: 0px 0px 3px #AAAAAA;
+  padding: 10px; }
+
+.btn-fab {
+  border-radius: 56px;
+  vertical-align: middle;
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  box-shadow: 0px 0px 3px #AAAAAA;
+  cursor: pointer; }
+
+/************************************************************************
+                                FORMS
+ ************************************************************************/
+.select {
+  margin: 10px;
+  width: 200px;
+  position: relative;
+  font-weight: 400; }
+  .select label {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    display: block;
+    padding: 10px; }
+  .select:hover label {
+    border-bottom: 0; }
+  .select > ul {
+    display: none; }
+  .select:hover > ul {
+    display: block;
+    float: left;
+    width: 200px;
+    background: white; }
+  .select .option {
+    padding: 7px 20px;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 1px;
+    color: #ed174a; }
+    .select .option:hover {
+      background: #ed174a;
+      color: white; }
+      .select .option:hover a {
+        display: block; }
+  .select .fa {
+    float: right; }
+
+/************************************************************************
+                                TIMELINE
+ ************************************************************************/
+.timeline {
+  padding-top: 10px; }
+  .timeline .block {
+    position: relative;
+    padding: 5px 0px;
+    box-sizing: border-box; }
+    .timeline .block:before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: -10;
+      left: 135px;
+      top: -10px; }
+    .timeline .block .category,
+    .timeline .block .main {
+      box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15); }
+
+.category {
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+  line-height: 27px; }

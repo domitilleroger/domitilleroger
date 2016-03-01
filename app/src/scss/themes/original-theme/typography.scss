@@ -1,0 +1,82 @@
+/************************************************************************
+                                TYPOGRAPHY
+ ************************************************************************/
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-Black.otf');
+    font-weight: 900;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-ExtraBold.otf');
+    font-weight: 800;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-Bold.otf');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-SemiBold.otf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-Regular.otf');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-Light.otf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-UltraLight.otf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../../../fonts/montserrat/Montserrat-Hairline.otf');
+    font-weight: 200;
+}
+
+/************************************************************************
+                                CLASSES
+ ************************************************************************/
+
+body{
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.title{
+    &-big {
+        font-variant: small-caps;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    & strong{
+        font-weight: 400;
+    }
+    span{
+        font-variant: small-caps;
+    }
+}
+.description{
+    font-size: 13px;
+    font-weight: 300;
+}
+.date{
+    font-size: 12px;
+    float: right;
+    font-weight: 200;
+} 
+
+.tag{
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 300;
+    font-size: 11px;
+}

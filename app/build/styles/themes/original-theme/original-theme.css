@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/************************************************************************
+                                VARIABLES 
+                                   AND
+                            GENERATED CLASSES
+ ************************************************************************/
+/************************************************************************
+                                COLORS
+ ************************************************************************/
+@import 'https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,100,400italic,700,700italic,900,900italic';
+@import url(icon-font.css);
+.color-white {
+  color: white; }
+
+.bgcolor-white {
+  background-color: white; }
+  .bgcolor-white.btn:hover {
+    background-color: #f2f2f2; }
+
+.color-moon-mist {
+  color: #E5E3E1; }
+
+.bgcolor-moon-mist {
+  background-color: #E5E3E1; }
+  .bgcolor-moon-mist.btn:hover {
+    background-color: #d9d6d3; }
+
+.color-sisal {
+  color: #D0C9B7; }
+
+.bgcolor-sisal {
+  background-color: #D0C9B7; }
+  .bgcolor-sisal.btn:hover {
+    background-color: #c6bda8; }
+
+.color-sidecar {
+  color: #F9F2DC; }
+
+.bgcolor-sidecar {
+  background-color: #F9F2DC; }
+  .bgcolor-sidecar.btn:hover {
+    background-color: #f5eac6; }
+
+.color-flush-mahogany {
+  color: #C5484A; }
+
+.bgcolor-flush-mahogany {
+  background-color: #C5484A; }
+  .bgcolor-flush-mahogany.btn:hover {
+    background-color: #b93b3d; }
+
+.color-congo-brown {
+  color: #6F3F3C; }
+
+.bgcolor-congo-brown {
+  background-color: #6F3F3C; }
+  .bgcolor-congo-brown.btn:hover {
+    background-color: #5e3633; }
+
+.color-raw-sienna {
+  color: #d17750; }
+
+.bgcolor-raw-sienna {
+  background-color: #d17750; }
+  .bgcolor-raw-sienna.btn:hover {
+    background-color: #cc673c; }
+
+.color-japonica {
+  color: #d96a52; }
+
+.bgcolor-japonica {
+  background-color: #d96a52; }
+  .bgcolor-japonica.btn:hover {
+    background-color: #d4583d; }
+
+.color-fuzzy-wuzzy-brown {
+  color: #c85853; }
+
+.bgcolor-fuzzy-wuzzy-brown {
+  background-color: #c85853; }
+  .bgcolor-fuzzy-wuzzy-brown.btn:hover {
+    background-color: #c24540; }
+
+.color-charm {
+  color: #d17b9f; }
+
+.bgcolor-charm {
+  background-color: #d17b9f; }
+  .bgcolor-charm.btn:hover {
+    background-color: #ca6891; }
+
+.color-trendy-pink {
+  color: #a274a4; }
+
+.bgcolor-trendy-pink {
+  background-color: #a274a4; }
+  .bgcolor-trendy-pink.btn:hover {
+    background-color: #98659a; }
+
+.color-crimson {
+  color: #ed174a; }
+
+.bgcolor-crimson {
+  background-color: #ed174a; }
+  .bgcolor-crimson.btn:hover {
+    background-color: #da1141; }
+
+.color-disco {
+  color: #a2216d; }
+
+.bgcolor-disco {
+  background-color: #a2216d; }
+  .bgcolor-disco.btn:hover {
+    background-color: #8d1d5f; }
+
+.color-flamingo {
+  color: #f36d37; }
+
+.bgcolor-flamingo {
+  background-color: #f36d37; }
+  .bgcolor-flamingo.btn:hover {
+    background-color: #f25b1f; }
+
+.color-energy-yellow {
+  color: #f5da52; }
+
+.bgcolor-energy-yellow {
+  background-color: #f5da52; }
+  .bgcolor-energy-yellow.btn:hover {
+    background-color: #f4d53a; }
+
+.color-paradiso {
+  color: #3b9195; }
+
+.bgcolor-paradiso {
+  background-color: #3b9195; }
+  .bgcolor-paradiso.btn:hover {
+    background-color: #347f83; }
+
+.color-gallery {
+  color: #ebebeb; }
+
+.bgcolor-gallery {
+  background-color: #ebebeb; }
+  .bgcolor-gallery.btn:hover {
+    background-color: #dedede; }
+
+.color-seashell {
+  color: #f1f1f1; }
+
+.bgcolor-seashell {
+  background-color: #f1f1f1; }
+  .bgcolor-seashell.btn:hover {
+    background-color: #e4e4e4; }
+
+.bgcolor-crimson, .bgcolor-flush-mahogany, .bgcolor-congo-brown {
+  color: #F7F5F3; }
+
+/************************************************************************
+                                ICONS
+ ************************************************************************/
+.category-formation {
+  background-color: #d17750; }
+
+.category-asso {
+  background-color: #c85853; }
+
+.category-work {
+  background-color: #d17b9f; }
+
+.category-project {
+  background-color: #a274a4; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../../fonts/icomoon.eot?bwe18w");
+  src: url("../../../fonts/icomoon.eot?bwe18w#iefix") format("embedded-opentype"), url("../../../fonts/icomoon.ttf?bwe18w") format("truetype"), url("../../../fonts/icomoon.woff?bwe18w") format("woff"), url("../../../fonts/icomoon.svg?bwe18w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  font-family: 'icomoon';
+  speak: none;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-flag-english:before {
+  content: "\e900"; }
+
+.icon-flag-france:before {
+  content: "\e901"; }
+
+.icon-house:before {
+  content: "\e902"; }
+
+.icon-asso:before {
+  content: "\e903"; }
+
+.icon-formation {
+  font-size: 10px; }
+  .icon-formation:before {
+    content: "\e904"; }
+
+.icon-project {
+  font-size: 16px;
+  line-height: 31px; }
+  .icon-project:before {
+    content: "\e905"; }
+
+.icon-work:before {
+  content: "\e906"; }
+
+.icon-linkedin:before {
+  content: "\e907"; }
+
+.icon-mail:before {
+  content: "\e909"; }
+
+.icon-phone:before {
+  content: "\e90a"; }
+
+/************************************************************************
+                                TYPOGRAPHY
+ ************************************************************************/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-Black.otf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-ExtraBold.otf");
+  font-weight: 800; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-Bold.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-SemiBold.otf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-Regular.otf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-Light.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-UltraLight.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../../../fonts/montserrat/Montserrat-Hairline.otf");
+  font-weight: 200; }
+
+/************************************************************************
+                                CLASSES
+ ************************************************************************/
+body {
+  font-family: 'Montserrat';
+  font-weight: 300; }
+
+.title-big {
+  font-variant: small-caps;
+  font-weight: 400;
+  font-size: 22px; }
+
+.title strong {
+  font-weight: 400; }
+
+.title span {
+  font-variant: small-caps; }
+
+.description {
+  font-size: 13px;
+  font-weight: 300; }
+
+.date {
+  font-size: 12px;
+  float: right;
+  font-weight: 200; }
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 300;
+  font-size: 11px; }
+
+/************************************************************************
+                                LAYOUT
+ ************************************************************************/
+.layout-fixed {
+  /* Tous les éléments en fixed sauf le dernier, le central*/
+  /* Spec au header, left, right */
+  /* Dernier élément centré*/ }
+  .layout-fixed > :nth-last-child(n+2) {
+    position: fixed;
+    z-index: 10; }
+  .layout-fixed > :nth-child(1) {
+    height: 50px;
+    width: 100%;
+    top: 0; }
+  .layout-fixed > :nth-child(2) {
+    height: 56px;
+    width: 56px;
+    bottom: 10px;
+    right: 10px; }
+  .layout-fixed > :nth-last-child(1) {
+    width: 100%;
+    margin: 50px auto;
+    max-width: 700px; }
+
+.block {
+  display: flex; }
+  .block .main {
+    flex-basis: auto;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    width: 100%; }
+  .block .category {
+    flex: 0 0 30px;
+    text-align: center; }
+  .block .date {
+    width: 100px;
+    min-width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    order: -1; }
+
+/************************************************************************
+                            GENERAL STYLE
+ ************************************************************************/
+body {
+  box-sizing: border-box; }
+
+.header p {
+  font-weight: 500;
+  font-size: 12px; }
+  .header p span {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-align: right; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/************************************************************************
+                                MATERIAL DESIGN 
+ ************************************************************************/
+.sheet {
+  box-shadow: 0px 0px 3px #AAAAAA;
+  padding: 10px; }
+
+.btn-fab {
+  border-radius: 56px;
+  vertical-align: middle;
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  box-shadow: 0px 0px 3px #AAAAAA;
+  cursor: pointer; }
+
+/************************************************************************
+                                FORMS
+ ************************************************************************/
+.select {
+  margin: 10px;
+  width: 200px;
+  position: relative;
+  font-weight: 400; }
+  .select label {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    display: block;
+    padding: 10px; }
+  .select:hover label {
+    border-bottom: 0; }
+  .select > ul {
+    display: none; }
+  .select:hover > ul {
+    display: block;
+    float: left;
+    width: 200px;
+    background: white; }
+  .select .option {
+    padding: 7px 20px;
+    font-weight: 300;
+    font-size: 12px;
+    margin-bottom: 1px;
+    color: #ed174a; }
+    .select .option:hover {
+      background: #ed174a;
+      color: white; }
+      .select .option:hover a {
+        display: block; }
+  .select .fa {
+    float: right; }
+
+/************************************************************************
+                                TIMELINE
+ ************************************************************************/
+.timeline {
+  padding-top: 10px; }
+  .timeline .block {
+    position: relative;
+    padding: 5px 0px;
+    box-sizing: border-box; }
+    .timeline .block:before {
+      content: '';
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: -10;
+      left: 135px;
+      top: -10px; }
+    .timeline .block .category,
+    .timeline .block .main {
+      box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15); }
+
+.category {
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+  line-height: 27px; }

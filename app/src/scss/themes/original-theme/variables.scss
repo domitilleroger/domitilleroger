@@ -1,0 +1,62 @@
+/************************************************************************
+                                VARIABLES 
+                                   AND
+                            GENERATED CLASSES
+ ************************************************************************/
+
+ $colors: (
+    white               : white,
+    moon-mist           : #E5E3E1,
+    sisal               : #D0C9B7,
+    sidecar             : #F9F2DC,
+    flush-mahogany      : #C5484A,
+    congo-brown         : #6F3F3C,
+
+    raw-sienna          : #d17750, /* Main training */
+    japonica            : #d96a52, /* Second training */
+    fuzzy-wuzzy-brown   : #c85853, /* Asso */
+    charm               : #d17b9f, /* Work */
+    trendy-pink         : #a274a4,  /* Project */
+
+    crimson             : #ed174a,
+    disco               : #a2216d,
+    flamingo            : #f36d37,
+    energy-yellow       : #f5da52,
+    paradiso            : #3b9195,
+    gallery             : #ebebeb, /* background*/
+    seashell            : #f1f1f1 /*text background grey */
+);
+$icons: (
+    formation   : #d17750,
+    asso        : #c85853,
+    work        : #d17b9f,
+    project     : #a274a4
+);
+
+/************************************************************************
+                                COLORS
+ ************************************************************************/
+
+@each $color in map-keys($colors){
+    .color-#{$color} {
+        color: map-get($colors, $color);
+    }   
+    .bgcolor-#{$color} {
+        background-color: map-get($colors, $color);
+        &.btn:hover{
+            background-color: darken(map-get($colors, $color), 5%);
+        }}  
+}
+
+.bgcolor{
+    &-crimson,
+    &-flush-mahogany,
+    &-congo-brown   { color: #F7F5F3/*map-get($colors, moon-mist)*/; }
+}
+
+/************************************************************************
+                                ICONS
+ ************************************************************************/
+@each $icon in map-keys($icons){
+    .category-#{$icon}  { background-color:     map-get($icons, $icon); }
+}

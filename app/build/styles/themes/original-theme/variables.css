@@ -1,0 +1,169 @@
+/************************************************************************
+                                VARIABLES 
+                                   AND
+                            GENERATED CLASSES
+ ************************************************************************/
+/************************************************************************
+                                COLORS
+ ************************************************************************/
+.color-white {
+  color: white; }
+
+.bgcolor-white {
+  background-color: white; }
+  .bgcolor-white.btn:hover {
+    background-color: #f2f2f2; }
+
+.color-moon-mist {
+  color: #E5E3E1; }
+
+.bgcolor-moon-mist {
+  background-color: #E5E3E1; }
+  .bgcolor-moon-mist.btn:hover {
+    background-color: #d9d6d3; }
+
+.color-sisal {
+  color: #D0C9B7; }
+
+.bgcolor-sisal {
+  background-color: #D0C9B7; }
+  .bgcolor-sisal.btn:hover {
+    background-color: #c6bda8; }
+
+.color-sidecar {
+  color: #F9F2DC; }
+
+.bgcolor-sidecar {
+  background-color: #F9F2DC; }
+  .bgcolor-sidecar.btn:hover {
+    background-color: #f5eac6; }
+
+.color-flush-mahogany {
+  color: #C5484A; }
+
+.bgcolor-flush-mahogany {
+  background-color: #C5484A; }
+  .bgcolor-flush-mahogany.btn:hover {
+    background-color: #b93b3d; }
+
+.color-congo-brown {
+  color: #6F3F3C; }
+
+.bgcolor-congo-brown {
+  background-color: #6F3F3C; }
+  .bgcolor-congo-brown.btn:hover {
+    background-color: #5e3633; }
+
+.color-raw-sienna {
+  color: #d17750; }
+
+.bgcolor-raw-sienna {
+  background-color: #d17750; }
+  .bgcolor-raw-sienna.btn:hover {
+    background-color: #cc673c; }
+
+.color-japonica {
+  color: #d96a52; }
+
+.bgcolor-japonica {
+  background-color: #d96a52; }
+  .bgcolor-japonica.btn:hover {
+    background-color: #d4583d; }
+
+.color-fuzzy-wuzzy-brown {
+  color: #c85853; }
+
+.bgcolor-fuzzy-wuzzy-brown {
+  background-color: #c85853; }
+  .bgcolor-fuzzy-wuzzy-brown.btn:hover {
+    background-color: #c24540; }
+
+.color-charm {
+  color: #d17b9f; }
+
+.bgcolor-charm {
+  background-color: #d17b9f; }
+  .bgcolor-charm.btn:hover {
+    background-color: #ca6891; }
+
+.color-trendy-pink {
+  color: #a274a4; }
+
+.bgcolor-trendy-pink {
+  background-color: #a274a4; }
+  .bgcolor-trendy-pink.btn:hover {
+    background-color: #98659a; }
+
+.color-crimson {
+  color: #ed174a; }
+
+.bgcolor-crimson {
+  background-color: #ed174a; }
+  .bgcolor-crimson.btn:hover {
+    background-color: #da1141; }
+
+.color-disco {
+  color: #a2216d; }
+
+.bgcolor-disco {
+  background-color: #a2216d; }
+  .bgcolor-disco.btn:hover {
+    background-color: #8d1d5f; }
+
+.color-flamingo {
+  color: #f36d37; }
+
+.bgcolor-flamingo {
+  background-color: #f36d37; }
+  .bgcolor-flamingo.btn:hover {
+    background-color: #f25b1f; }
+
+.color-energy-yellow {
+  color: #f5da52; }
+
+.bgcolor-energy-yellow {
+  background-color: #f5da52; }
+  .bgcolor-energy-yellow.btn:hover {
+    background-color: #f4d53a; }
+
+.color-paradiso {
+  color: #3b9195; }
+
+.bgcolor-paradiso {
+  background-color: #3b9195; }
+  .bgcolor-paradiso.btn:hover {
+    background-color: #347f83; }
+
+.color-gallery {
+  color: #ebebeb; }
+
+.bgcolor-gallery {
+  background-color: #ebebeb; }
+  .bgcolor-gallery.btn:hover {
+    background-color: #dedede; }
+
+.color-seashell {
+  color: #f1f1f1; }
+
+.bgcolor-seashell {
+  background-color: #f1f1f1; }
+  .bgcolor-seashell.btn:hover {
+    background-color: #e4e4e4; }
+
+.bgcolor-crimson, .bgcolor-flush-mahogany, .bgcolor-congo-brown {
+  color: #F7F5F3; }
+
+/************************************************************************
+                                ICONS
+ ************************************************************************/
+.category-formation {
+  background-color: #d17750; }
+
+.category-asso {
+  background-color: #c85853; }
+
+.category-work {
+  background-color: #d17b9f; }
+
+.category-project {
+  background-color: #a274a4; }
